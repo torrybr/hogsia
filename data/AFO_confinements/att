@@ -1,0 +1,172 @@
+
+            FID
+             OBJECTID
+             MAPLABELNA
+            LEGENDTYPE
+ 
+             PUBLICVIEW
+ 
+           Shape
+ 
+             LOCID
+       
+            STFACID
+         
+            PROGID
+         
+            FACNAME
+           
+             LOCADDRESS
+         
+             CITYNAME
+        
+             STATE
+          
+            LOCZIP
+            
+             COUNTYNAME
+         
+             FO
+          
+             LOCSUPPLEM
+           
+             OPSTATUS
+          
+             StatusStar
+
+             OperatType
+         
+             ConsPermID
+         
+      
+             MMPrecdDt
+     
+             NPDESExpDt
+          
+             BasinInspe
+
+             AnimalUnit
+          
+
+             SwineGrFin
+       
+             SwineWeFin
+         
+             SwineNurse
+       
+             SwineGesBo
+          
+             SwineSowLt
+          
+             SwineGilti
+         
+             CattleDaHl
+           
+             CattleDaJr
+         
+             CattleDaHf
+           
+             CattleBeFn
+           
+             CattleBeFe
+            
+             CattleVeal
+           
+             TurkeyFin
+            
+             TurkeyPlBr
+            
+             ChickenLBr
+           
+             ChickenPul
+          
+             Horses
+           
+             SheepLambs
+           
+             Goats
+          
+             Basin
+           
+             BldgPit
+          
+             BldPitdeep
+            
+             BldPitshal
+            
+             OutConcret
+            
+             OutCncrtCv
+           
+             OutCncrtUn
+            
+             SlurryStor
+           
+             LagoonAero
+           
+             LagoonAnae
+           
+             SandSetLan
+         
+             SetOpenEff
+            
+             SolidSetlg
+          
+             StockpilCv
+            
+             StockpilUn
+           
+             RunoffCntr
+          
+             Wetland
+          
+             ManStOther
+           
+             ATSystem
+          
+             VIB
+
+             VTA
+
+           TownshipNa
+        
+             TIER
+           
+           RANGE
+            
+             RANGEDIR
+           
+            SECTN
+           
+             LATITUDE
+           
+             LONGITUDE
+           
+             COLMTHTXT
+           
+            REFPNTTXT
+           
+            VERIFYTXT
+            
+             COLLECTBY
+         
+            COLDATE
+         
+             LOCCOMMENT
+           
+             CONGRESS
+          
+            STHOUSE
+          
+            STSENATE
+          
+             HUC
+          
+            ACCURACY
+          
+           X_COORD
+          
+             Y_COORD
+          
+             Hyperlink
+

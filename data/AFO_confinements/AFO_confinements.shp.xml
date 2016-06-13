@@ -1,0 +1,593 @@
+<?xml version="1.0"?>
+<metadata>
+	<idinfo>
+		<citation>
+			<citeinfo>
+				<origin>Iowa DNR</origin>
+				<origin>Calvin Wolter</origin>
+				<pubdate>20060206</pubdate>
+				<title>Confinement Feeding Operations Registered with the Iowa DNR</title>
+				<edition>20160212</edition>
+				<geoform Sync="TRUE">vector digital data</geoform>
+				<pubinfo>
+					<pubplace>Iowa City, Iowa</pubplace>
+					<publish>Iowa DNR, Geological Survey</publish>
+				</pubinfo>
+				<onlink>ftp://ftp.igsb.uiowa.edu/gis_library/ia_state/agriculture/AFO_confinements.zip</onlink>
+				<ftname Sync="TRUE">ONE_STOP.FACILITIES.VW_AFO_CONFINEMENTS</ftname></citeinfo>
+		</citation>
+		<descript>
+			<abstract>This file contains locations of confinement feeding operations that are known by the Iowa DNR.</abstract>
+			<purpose>This digital, geographically referenced data set was developed by the Iowa Department of Natural Resources to carry out agency responsibilities related to management, protection, and development of Iowa's natural resources.</purpose>
+			<supplinf>This coverage supplants the CAFOs coverage, due to the changed definition for CAFO.</supplinf>
+			<langdata Sync="TRUE">en</langdata></descript>
+		<timeperd>
+			<timeinfo>
+				<sngdate>
+					<caldate>20160212</caldate>
+				</sngdate>
+			</timeinfo>
+			<current>edition date</current>
+		</timeperd>
+		<status>
+			<progress>Complete</progress>
+			<update>Monthly</update>
+		</status>
+		<spdom>
+			<bounding>
+				<westbc Sync="TRUE">-97.032692</westbc>
+				<eastbc Sync="TRUE">-90.057357</eastbc>
+				<northbc Sync="TRUE">43.985325</northbc>
+				<southbc Sync="TRUE">39.965536</southbc>
+			</bounding>
+			<lboundng><leftbc Sync="TRUE">176206.000000</leftbc><rightbc Sync="TRUE">736136.000000</rightbc><bottombc Sync="TRUE">4430818.000000</bottombc><topbc Sync="TRUE">4870243.000000</topbc></lboundng></spdom>
+		<keywords>
+			<theme>
+				<themekt>None</themekt>
+				<themekey>Confined Animal Feeding Operations</themekey>
+			</theme>
+			<theme>
+				<themekt>ISO 19115 Topic Category</themekt>
+				<themekey>farming</themekey>
+				<themekey>environment</themekey>
+			</theme>
+			<place>
+				<placekey>Iowa</placekey>
+			</place>
+		</keywords>
+		<accconst>None</accconst>
+		<useconst>The development of the coverages in the NRGIS Library represents a major
+investment of staff time and effort.  As a professional responsibility, the Iowa
+DNR expects to receive proper credit when these GIS coverages are utilized.
+The Department also expects that the original documentation will remain with
+any redistribution of these coverages.</useconst>
+		<ptcontac>
+			<cntinfo>
+				<cntperp>
+					<cntper>Gene Tinker</cntper>
+					<cntorg>Iowa Department of Natural Resources</cntorg>
+				</cntperp>
+				<cntaddr>
+					<addrtype>mailing and physical address</addrtype>
+					<address>502 E 9th St.</address>
+					<city>Des Moines</city>
+					<state>IA</state>
+					<postal>50319</postal>
+				</cntaddr>
+				<cntvoice>515-281-3103</cntvoice>
+				<cntemail>Gene.Tinker@dnr.iowa.gov</cntemail>
+			</cntinfo>
+		</ptcontac>
+		<datacred>GIS file created by Calvin Wolter and Gail George from data collected by the Animal Feeding Operations Program.</datacred>
+		<secinfo>
+			<secsys>State of Iowa Enterprise Data Classification Standard</secsys>
+			<secclass>Public</secclass>
+		</secinfo>
+		<native Sync="TRUE">Microsoft Windows Vista Version 6.0 (Build 6002) Service Pack 2; ESRI ArcCatalog 9.3.1.1850</native>
+		<natvform Sync="TRUE">SDE Feature Class</natvform></idinfo>
+	<dataqual>
+		<attracc>
+			<attraccr>Data attributes were entered from information collected through January 2010.  Any new information entered in the Animal Feeding Operations database will show up in the table when the regular updates are done. (See Identification&gt;Status&gt;Update frequency.)</attraccr>
+		</attracc>
+		<posacc>
+			<horizpa>
+				<horizpar>The location of each site was either calculated based on the legal description of the facility or obtained from visual inspection of either the 2002 CIR DOQs or the NAIP aerial photography from 2004 or after.  It is usually a point on one of the buildings at each site.  Refer also to Collection Method &amp; Accuracy fields.</horizpar>
+				<qhorizpa>
+					<horizpav>12 meters</horizpav>
+					<horizpae>For site locations obtained by placing a point on a building at each site using aerial photography, the accuracy of the aerial photography is +/- 12 meters.</horizpae>
+				</qhorizpa>
+			</horizpa>
+		</posacc>
+		<lineage>
+			<srcinfo>
+				<srccite>
+					<citeinfo>
+						<origin>Iowa DNR</origin>
+						<title>Iowa DNR Animal Feeding Operation database</title>
+						<onlink>https://programs.iowadnr.gov/animalfeedingoperations/</onlink></citeinfo>
+				</srccite>
+				<srcscale>None</srcscale>
+				<typesrc>Electronic file</typesrc>
+				<srctime>
+					<srccurr>Spring 2007</srccurr>
+				</srctime>
+				<srccitea>IDNR AFO database</srccitea>
+				<srccontr>Provided the location and data for each site.</srccontr>
+			</srcinfo>
+			<srcinfo>
+				<srccite>
+					<citeinfo>
+						<origin>NRCS-FSA</origin>
+						<title>2006 National Agriculture Imagery Program (NAIP)</title>
+						<onlink>http://datagateway.nrcs.usda.gov/GatewayHome.html</onlink>
+					</citeinfo>
+				</srccite>
+				<srcscale>12000</srcscale>
+				<srccitea>NAIP 2005</srccitea>
+			</srcinfo>
+			<procstep>
+				<procdesc>Points are initially located to the center of the section, or if available, two quarter sections. Then information from the IDNR AFO database was used to match up the location with buildings identified from the 2002 CIR DOQs or NAIP aerial photography.  The legal description or address was mainly used to obtain the general location and then the aerial photo was used to place the point on a building at each site, if it appeared on the aerial photo.</procdesc>
+				<procdate>July, 2007</procdate>
+				<proccont>
+					<cntinfo>
+						<cntperp>
+							<cntper>Calvin Wolter</cntper>
+							<cntorg>Iowa DNR</cntorg>
+						</cntperp>
+						<cntpos>GIS Specialist</cntpos>
+						<cntvoice>319-335-1492</cntvoice>
+						<cntemail>cwolter@igsb.uiowa.edu</cntemail>
+						<hours>7:30 - 4:00 Central Time</hours>
+					</cntinfo>
+				</proccont>
+			</procstep>
+		</lineage>
+	</dataqual>
+	<spdoinfo>
+		<direct Sync="TRUE">Vector</direct>
+		<ptvctinf><esriterm Name="VW_AFO_CONFINEMENTS"><efeatyp Sync="TRUE">Simple</efeatyp><efeageom code="1" Sync="TRUE"></efeageom><esritopo Sync="TRUE">FALSE</esritopo><efeacnt Sync="TRUE">0</efeacnt><spindex Sync="TRUE">FALSE</spindex><linrefer Sync="TRUE">FALSE</linrefer></esriterm></ptvctinf></spdoinfo>
+	<spref>
+		<horizsys>
+			<planar>
+				<planci>
+					<plance>coordinate pair</plance>
+					<coordrep>
+						<absres>0.001024</absres>
+						<ordres>0.001024</ordres>
+					</coordrep>
+					<plandu>meters</plandu>
+				</planci>
+			</planar>
+			<geodetic>
+				<horizdn>North American Datum of 1983</horizdn>
+				<ellips>Geodetic Reference System 80</ellips>
+				<semiaxis>6378137.000000</semiaxis>
+				<denflat>298.257222</denflat>
+			</geodetic>
+			<cordsysn><geogcsn Sync="TRUE">GCS_North_American_1983</geogcsn><projcsn Sync="TRUE">NAD_1983_UTM_Zone_15N</projcsn></cordsysn></horizsys>
+		<vertdef>
+			<altsys>
+				<altres Sync="TRUE">1.000000</altres>
+				<altenc Sync="TRUE">Explicit elevation coordinate included with horizontal coordinates</altenc>
+			</altsys>
+		</vertdef>
+	</spref>
+	<eainfo>
+		<detailed Name="VW_AFO_CONFINEMENTS">
+			<enttyp>
+				<enttypl Sync="TRUE">VW_AFO_CONFINEMENTS</enttypl>
+				<enttypt Sync="TRUE">Feature Class</enttypt><enttypc Sync="TRUE">0</enttypc></enttyp>
+			<attr><attrlabl Sync="TRUE">FID</attrlabl><attalias Sync="TRUE">FID</attalias><attrtype Sync="TRUE">OID</attrtype><attwidth Sync="TRUE">4</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale><attrdef Sync="TRUE">Internal feature number.</attrdef><attrdefs Sync="TRUE">Esri</attrdefs><attrdomv><udom Sync="TRUE">Sequential unique whole numbers that are automatically generated.</udom></attrdomv></attr><attr>
+				<attrlabl Sync="TRUE">OBJECTID</attrlabl>
+				<attrdef Sync="TRUE">Internal feature number.</attrdef>
+				<attrdefs Sync="TRUE">ESRI</attrdefs>
+				<attrdomv>
+					<udom Sync="TRUE">Sequential unique whole numbers that are automatically generated.</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">OBJECTID</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">10</attwidth><atprecis Sync="TRUE">10</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">MAPLABELNA</attrlabl>
+				<attrdef>Map label name</attrdef><attalias Sync="TRUE">MAPLABELNA</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">160</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">LEGENDTYPE</attrlabl>
+				<attrdef>Environmental program or subentity used to define the map legend. </attrdef><attrdomv><edom><edomv>31</edomv><edomvd>Confinement</edomvd></edom></attrdomv><attalias Sync="TRUE">LEGENDTYPE</attalias><attrtype Sync="TRUE">Integer</attrtype><attwidth Sync="TRUE">5</attwidth><atprecis Sync="TRUE">5</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">PUBLICVIEW</attrlabl>
+				<attrdef>Whether a location is allowed to be viewed by the general public with unrestricted access.</attrdef><attalias Sync="TRUE">PUBLICVIEW</attalias><attrtype Sync="TRUE">Integer</attrtype><attwidth Sync="TRUE">5</attwidth><atprecis Sync="TRUE">5</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">Shape</attrlabl>
+				<attrdef Sync="TRUE">Feature geometry.</attrdef>
+				<attrdefs Sync="TRUE">ESRI</attrdefs>
+				<attrdomv>
+					<udom Sync="TRUE">Coordinates defining the features.</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">Shape</attalias><attrtype Sync="TRUE">Geometry</attrtype><attwidth Sync="TRUE">0</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">LOCID</attrlabl>
+				<attrdef>Location ID: unique identifier for each location point from the Location table of Iowa's Environmental Facilities Database warehouse.</attrdef>
+				<attalias Sync="TRUE">LOCID</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">11</attwidth><atprecis Sync="TRUE">11</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">STFACID</attrlabl>
+				<attrdef>State Facility ID: unique identifier for each facility site in Iowa's Environmental Facilities Database warehouse.</attrdef>
+				<attalias Sync="TRUE">stfacid</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">10</attwidth><atprecis Sync="TRUE">10</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">PROGID</attrlabl>
+				<attrdef>Program ID: unique identifier for each environmental program; i.e. the AFO Facility ID </attrdef>
+				<attalias Sync="TRUE">progid</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">30</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">FACNAME</attrlabl>
+				<attrdef>Facility Name: The public or commercial name of a facility site (i.e., the full name that commonly appears on invoices, signs, or other business documents, or as assigned by the state when the name is ambiguous).</attrdef>
+				<attrdefs>Facility Identification Data Standard</attrdefs>
+				<attalias Sync="TRUE">facName</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">80</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">LOCADDRESS</attrlabl>
+				<attrdef>Location Address: The address that describes the physical (geographic) location of the front door or main entrance of a facility site, including urban-style street address or rural address.</attrdef>
+				<attrdefs>Facility Identification Data Standard</attrdefs>
+				<attalias Sync="TRUE">LocAddress</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">50</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">CITYNAME</attrlabl>
+				<attrdef>City Name</attrdef>
+				<attalias Sync="TRUE">CityName</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">60</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">STATE</attrlabl>
+				<attrdef>State where the facility is located, as a 2-character abbreviation</attrdef>
+				<attalias Sync="TRUE">State</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">5</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">LOCZIP</attrlabl>
+				<attrdef>Zip code where the facility is located.</attrdef>
+				<attalias Sync="TRUE">locZip</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">14</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">COUNTYNAME</attrlabl>
+				<attrdef>County Name where the facility is located.</attrdef>
+				<attalias Sync="TRUE">countyName</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">35</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">FO</attrlabl>
+				<attrdef>Field Office of DNR's Environmental Services Division, where the facility is located.</attrdef>
+				<attalias Sync="TRUE">FO</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">1</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">LOCSUPPLEM</attrlabl>
+				<attrdef>Supplemental Location: additional information about the place, such as directions or description where no formal address is available; could include a building name with its secondary unit and number, or an industrial park name.</attrdef>
+				<attalias Sync="TRUE">locSupplem</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">50</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">OPSTATUS</attrlabl>
+				<attrdef>Operating Status of the confinement operation according to the AFO Database; i.e whether it is active or inactive.  </attrdef>
+				<attalias Sync="TRUE">opStatus</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">20</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr><attrlabl Sync="TRUE">StatusStar</attrlabl><attalias Sync="TRUE">StatusStar</attalias><attrtype Sync="TRUE">Date</attrtype><attwidth Sync="TRUE">8</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr><attr>
+				<attrlabl Sync="TRUE">OperatType</attrlabl>
+				<attrdef>Operation Type which is Confinement</attrdef><attalias Sync="TRUE">OperatType</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">13</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">ConsPermID</attrlabl>
+				<attrdef>Construction Permit ID number if a permit was issued.</attrdef><attalias Sync="TRUE">ConsPermID</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">20</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">ConsPermDt</attrlabl>
+				<attrdef>Construction Permit Issued Date</attrdef><attalias Sync="TRUE">ConsPermDt</attalias><attrtype Sync="TRUE">Date</attrtype><attwidth Sync="TRUE">8</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">MMPrecdDt</attrlabl>
+				<attrdef>Manure Management Plan received date</attrdef><attalias Sync="TRUE">MMPrecdDt</attalias><attrtype Sync="TRUE">Date</attrtype><attwidth Sync="TRUE">8</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">NPDESExpDt</attrlabl>
+				<attrdef>Expiration Date for the NPDES permit. This is a wastewater permit for the National Pollution Discharge Elimination System.</attrdef><attalias Sync="TRUE">NPDESExpDt</attalias><attrtype Sync="TRUE">Date</attrtype><attwidth Sync="TRUE">8</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr><attrlabl Sync="TRUE">BasinInspe</attrlabl><attalias Sync="TRUE">BasinInspe</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">3</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr><attr>
+				<attrlabl Sync="TRUE">AnimalUnit</attrlabl>
+				<attrdef>Animal Unit: The Total Animal Units capacity at the operation. Animal Units are calculated using weight equivalence for each animal type. See the Entity and attribute overview. </attrdef><attalias Sync="TRUE">AnimalUnit</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">19</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">SwineGrFin</attrlabl>
+				<attrdef>Swine Grow to Finish, number of head</attrdef><attalias Sync="TRUE">SwineGrFin</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">10</attwidth><atprecis Sync="TRUE">10</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">SwineWeFin</attrlabl>
+				<attrdef>Swine Wean to Finish, number of head</attrdef><attalias Sync="TRUE">SwineWeFin</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">10</attwidth><atprecis Sync="TRUE">10</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">SwineNurse</attrlabl>
+				<attrdef>Swine Nursery, number of head</attrdef><attalias Sync="TRUE">SwineNurse</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">10</attwidth><atprecis Sync="TRUE">10</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">SwineGesBo</attrlabl>
+				<attrdef>Swine Gestation (&amp; Boars), number of head</attrdef><attalias Sync="TRUE">SwineGesBo</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">10</attwidth><atprecis Sync="TRUE">10</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">SwineSowLt</attrlabl>
+				<attrdef>Swine Sow &amp; Litter, number of head</attrdef><attalias Sync="TRUE">SwineSowLt</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">10</attwidth><atprecis Sync="TRUE">10</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">SwineGilti</attrlabl>
+				<attrdef>Swine Gilts (&amp; Isolation), number of head</attrdef><attalias Sync="TRUE">SwineGilti</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">10</attwidth><atprecis Sync="TRUE">10</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">CattleDaHl</attrlabl>
+				<attrdef>Cattle Dairy Holstein, number of head</attrdef><attalias Sync="TRUE">CattleDaHl</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">10</attwidth><atprecis Sync="TRUE">10</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">CattleDaJr</attrlabl>
+				<attrdef>Cattle Dairy Jersey, number of head</attrdef><attalias Sync="TRUE">CattleDaJr</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">10</attwidth><atprecis Sync="TRUE">10</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">CattleDaHf</attrlabl>
+				<attrdef>Cattle Dairy Heifer &amp; Hut Calves, number of head</attrdef><attalias Sync="TRUE">CattleDaHf</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">10</attwidth><atprecis Sync="TRUE">10</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">CattleBeFn</attrlabl>
+				<attrdef>Cattle Beef Finishing, number of head</attrdef><attalias Sync="TRUE">CattleBeFn</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">10</attwidth><atprecis Sync="TRUE">10</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">CattleBeFe</attrlabl>
+				<attrdef>Cattle Beef Feeder Calf, number of head</attrdef><attalias Sync="TRUE">CattleBeFe</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">10</attwidth><atprecis Sync="TRUE">10</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">CattleVeal</attrlabl>
+				<attrdef>Cattle Veal, number of head</attrdef><attalias Sync="TRUE">CattleVeal</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">10</attwidth><atprecis Sync="TRUE">10</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">TurkeyFin</attrlabl>
+				<attrdef>Turkey Finisher, number of animals</attrdef><attalias Sync="TRUE">TurkeyFin</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">10</attwidth><atprecis Sync="TRUE">10</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">TurkeyPlBr</attrlabl>
+				<attrdef>Turkey Poult or Brooder, number of animals</attrdef><attalias Sync="TRUE">TurkeyPlBr</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">10</attwidth><atprecis Sync="TRUE">10</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">ChickenLBr</attrlabl>
+				<attrdef>Chicken Layer or Broilder, number of animals</attrdef><attalias Sync="TRUE">ChickenLBr</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">10</attwidth><atprecis Sync="TRUE">10</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">ChickenPul</attrlabl>
+				<attrdef>Chicken Pullet, number of animals</attrdef><attalias Sync="TRUE">ChickenPul</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">10</attwidth><atprecis Sync="TRUE">10</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">Horses</attrlabl>
+				<attrdef>Horses, number of head</attrdef><attalias Sync="TRUE">Horses</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">10</attwidth><atprecis Sync="TRUE">10</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">SheepLambs</attrlabl>
+				<attrdef>Sheep and Lambs, number of head</attrdef><attalias Sync="TRUE">SheepLambs</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">10</attwidth><atprecis Sync="TRUE">10</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">Goats</attrlabl>
+				<attrdef>Goats, number of head</attrdef><attalias Sync="TRUE">Goats</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">10</attwidth><atprecis Sync="TRUE">10</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">Basin</attrlabl>
+				<attrdef>Number of manure storage structures that are earthen basins.</attrdef><attalias Sync="TRUE">Basin</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">10</attwidth><atprecis Sync="TRUE">10</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">BldgPit</attrlabl>
+				<attrdef>Number of manure storage structures that are Below Building Pits</attrdef><attalias Sync="TRUE">BldgPit</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">10</attwidth><atprecis Sync="TRUE">10</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">BldPitdeep</attrlabl>
+				<attrdef>Number of manure storage structures that are Below Building Pits Deep</attrdef><attalias Sync="TRUE">BldPitdeep</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">10</attwidth><atprecis Sync="TRUE">10</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">BldPitshal</attrlabl>
+				<attrdef>Number of manure storage structures that are Below Building Pits - Shallow</attrdef><attalias Sync="TRUE">BldPitshal</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">10</attwidth><atprecis Sync="TRUE">10</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">OutConcret</attrlabl>
+				<attrdef>Number of manure storage structures that are Confinement Buildings</attrdef><attalias Sync="TRUE">OutConcret</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">10</attwidth><atprecis Sync="TRUE">10</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">OutCncrtCv</attrlabl>
+				<attrdef>Number of manure storage structures that are Outside Concrete - Covered</attrdef><attalias Sync="TRUE">OutCncrtCv</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">10</attwidth><atprecis Sync="TRUE">10</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">OutCncrtUn</attrlabl>
+				<attrdef>Number of manure storage structures that are Outside Concrete - Uncovered</attrdef><attalias Sync="TRUE">OutCncrtUn</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">10</attwidth><atprecis Sync="TRUE">10</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">SlurryStor</attrlabl>
+				<attrdef>Number of manure storage structures that are Slurry Store</attrdef><attalias Sync="TRUE">SlurryStor</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">10</attwidth><atprecis Sync="TRUE">10</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">LagoonAero</attrlabl>
+				<attrdef>Number of manure storage structures that are Lagoons - Aerobic</attrdef><attalias Sync="TRUE">LagoonAero</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">10</attwidth><atprecis Sync="TRUE">10</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">LagoonAnae</attrlabl>
+				<attrdef>Number of manure storage structures that are Lagoons - Anaerobic</attrdef><attalias Sync="TRUE">LagoonAnae</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">10</attwidth><atprecis Sync="TRUE">10</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">SandSetLan</attrlabl>
+				<attrdef>Number of manure storage structures that are Sand Settling Lanes</attrdef><attalias Sync="TRUE">SandSetLan</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">10</attwidth><atprecis Sync="TRUE">10</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">SetOpenEff</attrlabl>
+				<attrdef>Number of manure storage structures that are Settled Open Feedlot Effluent Basins</attrdef><attalias Sync="TRUE">SetOpenEff</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">10</attwidth><atprecis Sync="TRUE">10</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">SolidSetlg</attrlabl>
+				<attrdef>Number of manure storage structures that are Solids Settling</attrdef><attalias Sync="TRUE">SolidSetlg</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">10</attwidth><atprecis Sync="TRUE">10</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">StockpilCv</attrlabl>
+				<attrdef>Number of manure storage structures that are Stockpiling Structures - Covered</attrdef><attalias Sync="TRUE">StockpilCv</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">10</attwidth><atprecis Sync="TRUE">10</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">StockpilUn</attrlabl>
+				<attrdef>Number of manure storage structures that are Stockpiling Structures - Uncovered</attrdef><attalias Sync="TRUE">StockpilUn</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">10</attwidth><atprecis Sync="TRUE">10</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">RunoffCntr</attrlabl>
+				<attrdef>Number of manure storage structures that are Runoff Control</attrdef><attalias Sync="TRUE">RunoffCntr</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">10</attwidth><atprecis Sync="TRUE">10</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">Wetland</attrlabl>
+				<attrdef>Number of manure storage treatment systems that are wetlands</attrdef><attalias Sync="TRUE">Wetland</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">10</attwidth><atprecis Sync="TRUE">10</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">ManStOther</attrlabl>
+				<attrdef>Number of other types of manure storage structures</attrdef><attalias Sync="TRUE">ManStOther</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">10</attwidth><atprecis Sync="TRUE">10</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">ATSystem</attrlabl>
+				<attrdef>Alternative Technology (AT) Systems that are used for manure storage/treatment </attrdef><attalias Sync="TRUE">ATSystem</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">10</attwidth><atprecis Sync="TRUE">10</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr><attrlabl Sync="TRUE">VIB</attrlabl><attalias Sync="TRUE">VIB</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">10</attwidth><atprecis Sync="TRUE">10</atprecis><attscale Sync="TRUE">0</attscale></attr><attr><attrlabl Sync="TRUE">VTA</attrlabl><attalias Sync="TRUE">VTA</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">10</attwidth><atprecis Sync="TRUE">10</atprecis><attscale Sync="TRUE">0</attscale></attr><attr>
+				<attrlabl Sync="TRUE">TownshipNa</attrlabl>
+				<attrdef>Township Name for the site's legal description.</attrdef><attalias Sync="TRUE">TownshipNa</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">50</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">TIER</attrlabl>
+				<attrdef>Tier: Township number for the site's legal description.</attrdef>
+				<attalias Sync="TRUE">Tier</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">3</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">RANGE</attrlabl>
+				<attrdef>Range number for the site's legal description.</attrdef>
+				<attalias Sync="TRUE">Range</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">2</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">RANGEDIR</attrlabl>
+				<attrdef>Range direction for the site's legal description; (W or E)</attrdef>
+				<attalias Sync="TRUE">rangeDir</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">1</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">SECTN</attrlabl>
+				<attrdef>Section number for the site's legal description; indicating the square mile the site is in.</attrdef>
+				<attalias Sync="TRUE">Sectn</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">2</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">LATITUDE</attrlabl>
+				<attrdef>Latitude in decimal degrees, NAD83.</attrdef>
+				<attalias Sync="TRUE">Latitude</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">9</attwidth><atprecis Sync="TRUE">8</atprecis><attscale Sync="TRUE">5</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">LONGITUDE</attrlabl>
+				<attrdef>Longitude  in decimal degrees, NAD83.</attrdef>
+				<attalias Sync="TRUE">Longitude</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">10</attwidth><atprecis Sync="TRUE">9</atprecis><attscale Sync="TRUE">5</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">COLMTHTXT</attrlabl>
+				<attrdef>Collection Method Text: method used to determine the latitude and longitude coordinates for a point on the earth., such as GPS, address-matching, or aerial photo.</attrdef>
+				<attrdefs>Facility Identification Data Standard</attrdefs>
+				<attalias Sync="TRUE">colMthTxt</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">60</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">REFPNTTXT</attrlabl>
+				<attrdef>Reference Point Text: the place for which geographic coordinates were established; such as plant entrance, center of facility, storage tank, or potential contaminant source.</attrdef>
+				<attrdefs>Facility Identification Data Standard</attrdefs>
+				<attalias Sync="TRUE">refPntTxt</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">60</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">VERIFYTXT</attrlabl>
+				<attrdef>Verification text: the process used to verify the latitude and longitude; such as point in county.</attrdef>
+				<attrdefs>Latitude Longitude Data Standard</attrdefs>
+				<attalias Sync="TRUE">VerifyTxt</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">65</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">COLLECTBY</attrlabl>
+				<attrdef>Collect By: the person who collected the point; usually first initial of first name &amp; first 6 letters of the last name.</attrdef>
+				<attalias Sync="TRUE">collectBy</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">8</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">COLDATE</attrlabl>
+				<attrdef>Collection Date: The calendar date when data were collected.</attrdef>
+				<attrdefs>Latitude Longitude Data Standard</attrdefs>
+				<attalias Sync="TRUE">ColDate</attalias><attrtype Sync="TRUE">Date</attrtype><attwidth Sync="TRUE">8</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">LOCCOMMENT</attrlabl>
+				<attrdef>Location Comment: additional information about the geographic coordinates.</attrdef>
+				<attrdefs>Latitude Longitude Data Standard</attrdefs>
+				<attalias Sync="TRUE">locComment</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">150</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">CONGRESS</attrlabl>
+				<attrdef>U.S. Congressional District number</attrdef>
+				<attalias Sync="TRUE">Congress</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">2</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">STHOUSE</attrlabl>
+				<attrdef>State House: Iowa House district number.</attrdef>
+				<attalias Sync="TRUE">StHouse</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">3</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">STSENATE</attrlabl>
+				<attrdef>State Senate: the Iowa Senate district number.</attrdef>
+				<attalias Sync="TRUE">StSenate</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">2</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">HUC</attrlabl>
+				<attrdef>Hydrologic Unit Code: 12-digit number for the watershed.</attrdef>
+				<attalias Sync="TRUE">HUC</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">12</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">ACCURACY</attrlabl>
+				<attrdef>Accuracy: The measure of the accuracy (in meters) of the latitude and longitude coordinates.</attrdef>
+				<attrdefs>Latitude Longitude Data Standard</attrdefs>
+				<attalias Sync="TRUE">Accuracy</attalias><attrtype Sync="TRUE">Integer</attrtype><attwidth Sync="TRUE">7</attwidth><atprecis Sync="TRUE">7</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">X_COORD</attrlabl>
+				<attrdef>X coordinate in UTM, zone 15, NAD83.</attrdef>
+				<attalias Sync="TRUE">X_Coord</attalias><attrtype Sync="TRUE">Integer</attrtype><attwidth Sync="TRUE">8</attwidth><atprecis Sync="TRUE">8</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">Y_COORD</attrlabl>
+				<attrdef>Y coordinate in UTM, Zone 15, NAD83.</attrdef>
+				<attalias Sync="TRUE">Y_Coord</attalias><attrtype Sync="TRUE">Integer</attrtype><attwidth Sync="TRUE">9</attwidth><atprecis Sync="TRUE">9</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr><attrlabl Sync="TRUE">Hyperlink</attrlabl><attalias Sync="TRUE">Hyperlink</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">254</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr></detailed>
+	</eainfo>
+	<distinfo>
+		<distrib>
+			<cntinfo>
+				<cntorgp>
+					<cntorg>Iowa Geological and WaterSurvey, DNR</cntorg>
+				</cntorgp>
+				<cntpos>GeoSpatial DBA / NRGIS Librarian</cntpos>
+				<cntaddr>
+					<addrtype>mailing and physical address</addrtype>
+					<address>109 Trowbridge Hall</address>
+					<city>Iowa City</city>
+					<state>IA</state>
+					<postal>52242</postal>
+				</cntaddr>
+				<cntvoice>319-335-1575</cntvoice>
+				<cntemail>gis_library@igsb.uiowa.edu</cntemail>
+			</cntinfo>
+		</distrib>
+		<resdesc>Downloadable Data</resdesc>
+		<distliab>Although efforts have been made in correcting errors in order to make this information useful to the Department, the Department assumes no responsibility for errors in the information.  Similarly, the Department assumes no responsibility for the consequences of inappropriate uses or interpretations of the data made by anyone to whom this data has been made available.  The Department bears no responsibility to inform users of any changes made to this data.  Anyone using this data is advised that precision implied by the coverage may far exceed actual precision.  Comments on this data are invited and the Department would appreciate that documented errors be brought to staff attention.</distliab>
+		<stdorder>
+			<digform>
+				<digtinfo>
+					<formname>shapefile</formname>
+					<filedec>zip</filedec>
+				</digtinfo>
+				<digtopt>
+					<onlinopt>
+						<computer>
+							<networka>
+								<networkr>ftp://ftp.igsb.uiowa.edu/gis_library/ia_state/agriculture/AFO_confinements.zip</networkr>
+							</networka>
+						</computer>
+						<accinstr>Click on FTP link provided</accinstr>
+					</onlinopt>
+				</digtopt>
+			</digform>
+			<fees>None</fees>
+			<ordering>Click on link provided.</ordering>
+			<turnarnd>Immediate</turnarnd>
+		</stdorder>
+		<availabl>
+			<timeinfo>
+				<sngdate>
+					<caldate>365 days/year</caldate>
+					<time>24 hours/day</time>
+				</sngdate>
+			</timeinfo>
+		</availabl>
+	</distinfo>
+	<distinfo>
+		<distrib>
+			<cntinfo>
+				<cntperp>
+					<cntorg>Iowa Geological and Water Survey, DNR</cntorg>
+				</cntperp>
+				<cntemail>gis_library@igsb.uiowa.edu</cntemail>
+			</cntinfo>
+		</distrib>
+		<resdesc>Live Data and Maps</resdesc>
+		<distliab>Although efforts have been made in correcting errors in order to make this information useful to the Department, the Department assumes no responsibility for errors in the information.  Similarly, the Department assumes no responsibility for the consequences of inappropriate uses or interpretations of the data made by anyone to whom this data has been made available.  The Department bears no responsibility to inform users of any changes made to this data.  Anyone using this data is advised that precision implied by the coverage may far exceed actual precision.  Comments on this data are invited and the Department would appreciate that documented errors be brought to staff attention.</distliab>
+		<stdorder>
+			<digform>
+				<digtinfo>
+					<formname>SDE Feature Class</formname>
+				</digtinfo>
+				<digtopt>
+					<onlinopt>
+						<computer>
+							<networka>
+								<networkr>http://www.iowadnr.gov/</networkr>
+							</networka>
+						</computer>
+						<accinstr>Click "Mapping (GIS Interactive)" on the left menu.  Then Click the appropriate Mapping Application.</accinstr>
+					</onlinopt>
+				</digtopt>
+			</digform>
+			<fees>None</fees>
+			<ordering>Click on link provided.</ordering>
+			<turnarnd>Immediate</turnarnd>
+		</stdorder>
+		<availabl>
+			<timeinfo>
+				<mdattim>
+					<sngdate>
+						<caldate>365 days / year</caldate>
+						<time>24 hours / day</time>
+					</sngdate>
+				</mdattim>
+			</timeinfo>
+		</availabl>
+	</distinfo>
+	<metainfo>
+		<metd>20070713</metd>
+		<metrd>20090428</metrd>
+		<metc>
+			<cntinfo>
+				<cntorgp>
+					<cntorg>Iowa Geological andn Water Survey, DNR</cntorg>
+				</cntorgp>
+				<cntpos>NRGIS Librarian</cntpos>
+				<cntaddr>
+					<addrtype>mailing and physical address</addrtype>
+					<address>109 Trowbridge Hall</address>
+					<city>Iowa City</city>
+					<state>IA</state>
+					<postal>52242-1319</postal>
+				</cntaddr>
+				<cntvoice>319-335-1575</cntvoice>
+				<cntemail>gis_library@igsb.uiowa.edu</cntemail>
+			</cntinfo>
+		</metc>
+		<metstdn Sync="TRUE">FGDC Content Standards for Digital Geospatial Metadata</metstdn>
+		<metstdv Sync="TRUE">FGDC-STD-001-1998</metstdv>
+		<mettc Sync="TRUE">local time</mettc>
+		<metac>None</metac>
+		<metuc>None</metuc>
+		<langmeta Sync="TRUE">en</langmeta></metainfo>
+	<lineage></lineage>
+	<Esri><ModDate>20160208</ModDate><ModTime>15593900</ModTime><SyncDate>20160208</SyncDate><SyncTime>15593900</SyncTime><DataProperties><itemProps><itemName Sync="TRUE">VW_AFO_CONFINEMENTS</itemName><imsContentType Sync="TRUE">002</imsContentType><itemSize Sync="TRUE">0.000</itemSize><itemLocation><linkage Sync="TRUE">file://\\IOWADSMSDE01\E$\data_to_load\to_library\VW_AFO_CONFINEMENTS.shp</linkage><protocol Sync="TRUE">Local Area Network</protocol></itemLocation></itemProps><coordRef><type Sync="TRUE">Projected</type><geogcsn Sync="TRUE">GCS_North_American_1983</geogcsn><csUnits Sync="TRUE">Linear Unit: Meter (1.000000)</csUnits><projcsn Sync="TRUE">NAD_1983_UTM_Zone_15N</projcsn><peXml Sync="TRUE">&lt;ProjectedCoordinateSystem xsi:type='typens:ProjectedCoordinateSystem' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xs='http://www.w3.org/2001/XMLSchema' xmlns:typens='http://www.esri.com/schemas/ArcGIS/10.1'&gt;&lt;WKT&gt;PROJCS[&amp;quot;NAD_1983_UTM_Zone_15N&amp;quot;,GEOGCS[&amp;quot;GCS_North_American_1983&amp;quot;,DATUM[&amp;quot;D_North_American_1983&amp;quot;,SPHEROID[&amp;quot;GRS_1980&amp;quot;,6378137.0,298.257222101]],PRIMEM[&amp;quot;Greenwich&amp;quot;,0.0],UNIT[&amp;quot;Degree&amp;quot;,0.0174532925199433]],PROJECTION[&amp;quot;Transverse_Mercator&amp;quot;],PARAMETER[&amp;quot;False_Easting&amp;quot;,500000.0],PARAMETER[&amp;quot;False_Northing&amp;quot;,0.0],PARAMETER[&amp;quot;Central_Meridian&amp;quot;,-93.0],PARAMETER[&amp;quot;Scale_Factor&amp;quot;,0.9996],PARAMETER[&amp;quot;Latitude_Of_Origin&amp;quot;,0.0],UNIT[&amp;quot;Meter&amp;quot;,1.0],AUTHORITY[&amp;quot;EPSG&amp;quot;,26915]]&lt;/WKT&gt;&lt;XOrigin&gt;-5120900&lt;/XOrigin&gt;&lt;YOrigin&gt;-9998100&lt;/YOrigin&gt;&lt;XYScale&gt;450445547.3910538&lt;/XYScale&gt;&lt;ZOrigin&gt;-100000&lt;/ZOrigin&gt;&lt;ZScale&gt;10000&lt;/ZScale&gt;&lt;MOrigin&gt;-100000&lt;/MOrigin&gt;&lt;MScale&gt;10000&lt;/MScale&gt;&lt;XYTolerance&gt;0.001&lt;/XYTolerance&gt;&lt;ZTolerance&gt;0.001&lt;/ZTolerance&gt;&lt;MTolerance&gt;0.001&lt;/MTolerance&gt;&lt;HighPrecision&gt;true&lt;/HighPrecision&gt;&lt;WKID&gt;26915&lt;/WKID&gt;&lt;LatestWKID&gt;26915&lt;/LatestWKID&gt;&lt;/ProjectedCoordinateSystem&gt;</peXml></coordRef><lineage><Process ToolSource="c:\program files (x86)\arcgis\desktop10.1\ArcToolbox\Toolboxes\Data Management Tools.tbx\CopyFeatures" Date="20160208" Time="155943">CopyFeatures "Database Connections\ckohrt_OneStop.sde\ONE_STOP.FACILITIES.VW_AFO_CONFINEMENTS" E:\data_to_load\to_library\VW_AFO_CONFINEMENTS.shp # 0 0 0</Process></lineage></DataProperties></Esri><mdDateSt Sync="TRUE">20160208</mdDateSt><dataIdInfo><envirDesc Sync="TRUE"> Version 6.2 (Build 9200) ; Esri ArcGIS 10.1.0.3035</envirDesc><dataLang><languageCode Sync="TRUE" value="eng"></languageCode><countryCode value="USA" Sync="TRUE"></countryCode></dataLang><idCitation><resTitle Sync="TRUE">VW_AFO_CONFINEMENTS</resTitle><presForm><PresFormCd Sync="TRUE" value="005"></PresFormCd></presForm></idCitation><spatRpType><SpatRepTypCd Sync="TRUE" value="001"></SpatRepTypCd></spatRpType><dataExt><geoEle><GeoBndBox esriExtentType="native"><westBL Sync="TRUE">176206</westBL><eastBL Sync="TRUE">736136</eastBL><northBL Sync="TRUE">4870243</northBL><southBL Sync="TRUE">4430818</southBL><exTypeCode Sync="TRUE">1</exTypeCode></GeoBndBox></geoEle></dataExt><geoBox esriExtentType="decdegrees"><westBL Sync="TRUE">-97.032692</westBL><eastBL Sync="TRUE">-90.057357</eastBL><northBL Sync="TRUE">43.985325</northBL><southBL Sync="TRUE">39.965536</southBL><exTypeCode Sync="TRUE">1</exTypeCode></geoBox></dataIdInfo><mdLang><languageCode Sync="TRUE" value="eng"></languageCode><countryCode value="USA" Sync="TRUE"></countryCode></mdLang><mdStanName Sync="TRUE">ISO 19115 Geographic Information - Metadata</mdStanName><mdStanVer Sync="TRUE">DIS_ESRI1.0</mdStanVer><mdChar><CharSetCd Sync="TRUE" value="004"></CharSetCd></mdChar><mdHrLv><ScopeCd Sync="TRUE" value="005"></ScopeCd></mdHrLv><mdHrLvName Sync="TRUE">dataset</mdHrLvName><distInfo><distributor><distorTran><onLineSrc><orDesc Sync="TRUE">002</orDesc><linkage Sync="TRUE">file://Service=sde:sqlserver:DNRDSMSDE01\GIS; Database=ONE_STOP; User=FACILITIES; Version=dbo.DEFAULT</linkage><protocol Sync="TRUE">Local Area Network</protocol></onLineSrc></distorTran><distorFormat><formatName Sync="TRUE">SDE Feature Class</formatName></distorFormat></distributor><distFormat><formatName Sync="TRUE">Shapefile</formatName></distFormat><distTranOps><transSize Sync="TRUE">0.000</transSize></distTranOps></distInfo><refSysInfo><RefSystem><refSysID><identCode Sync="TRUE" value="26915">NAD_1983_UTM_Zone_15N</identCode><idCodeSpace Sync="TRUE">EPSG</idCodeSpace><idVersion Sync="TRUE">7.9.4</idVersion></refSysID></RefSystem></refSysInfo><spatRepInfo><VectSpatRep><geometObjs Name="VW_AFO_CONFINEMENTS"><geoObjTyp><GeoObjTypCd value="004" Sync="TRUE"></GeoObjTypCd></geoObjTyp><geoObjCnt Sync="TRUE">0</geoObjCnt></geometObjs><topLvl><TopoLevCd value="001" Sync="TRUE"></TopoLevCd></topLvl></VectSpatRep></spatRepInfo></metadata>
