@@ -15,9 +15,6 @@
     <script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-	
-	<script>	
-	</script>
 </head>
 <body>
     <!--Navigation Bar-->
@@ -28,7 +25,7 @@
             </div>
             <ul class="nav navbar-nav navbar-right ">
                 <li class="inactive"><a href="about.php">about</a></li>
-                <li class="inactive"><a href="contact.php">contact</a></li>
+                <li class="inactive"><a href="contact.php">how it works</a></li>
                 <form class="navbar-form navbar-left" role="search" name="jsform" id="jsform">
 					<div class="form-group">
 							<input type="text" id="searchbar" class="form-control" placeholder="Enter an Address">
@@ -39,7 +36,8 @@
         </div>
     </nav>
     <div id='map'></div>
-    <script>
+    
+	<script>
 		/*Initialize API and Map functions */
 	   L.mapbox.accessToken = 'pk.eyJ1IjoidG9ycnliciIsImEiOiJjaXBiandkNXYwMDZhdDBtNzE0ZmQ5Y2U2In0.Hyoq2tSqLqCbNg_aZdDbaw';
 		
@@ -54,31 +52,33 @@
 		/* When a user searches, it calls this function */
 		$('#jsform').submit(function(event) {
 			var term = document.getElementById("searchbar").value;
-			var boundry = "&boundary.rect.min_lat=40.38&boundary.rect.min_lon=-96.64&boundary.rect.max_lat=43.5&boundar.rect.max_lon=-90.14";
-			var boundry2 = "&boundary.country=USA";
-			var totalreturn="&size=5";
 			
+			var bbox;
+			var jsonQ;
 			var url = "https://search.mapzen.com/v1/search?api_key=search-ktiqWXv&text=" + encodeURIComponent(term);
-			console.log(url);
-			/*Call to livesearch.php
-			returns sql data query based on search term
-			Plots on map
-			Zooms to location
-			*/
-			
-			
+		
 			/* Call MapZen Search API, Responsed w/ JSON, Parse Json, Zoom to location */
-				$.getJSON(url,function(response) {
-					var obj = JSON.parse(JSON.stringify(response));  
-					var marker = new L.marker([obj.features[0].geometry.coordinates[1],obj.features[0].geometry.coordinates[0]])
-					.addTo(map);	
-					map.setView(new L.LatLng(obj.features[0].geometry.coordinates[1], obj.features[0].geometry.coordinates[0]),13);
-					console.log(map.getBounds());
+			$.getJSON(url,function(response) {
+				var obj = JSON.parse(JSON.stringify(response));  
+				var marker = new L.marker([obj.features[0].geometry.coordinates[1],obj.features[0].geometry.coordinates[0]])
+				.addTo(map);	
+				map.setView(new L.LatLng(obj.features[0].geometry.coordinates[1], obj.features[0].geometry.coordinates[0]),13);	
+					
+				/* bounding box that looks like: topLeftLat,topLeftLon,bottomRightLat,bottomRightLon, so we need to reorder the coordinates Leaflet returned */
+				bbox = map.getBounds();
+				console.log(bbox);
+				var query = [
+					bbox._northEast.lat,
+					bbox._southWest.lng,
+					bbox._southWest.lat,
+					bbox._northEast.lng];
+				/* Encode Boundry information in JSON format */
+				 jsonQ = JSON.stringify(query);
 				});
 			event.preventDefault();
 		});	
 		
-		/*Returns all Lat/Long obects in sqlite3 database and creates map marker */
+		/*Returns LIMIT OF 200 Data Points all Lat/Long obects in sqlite3 database and creates map marker,   */
 		$.getJSON('returnAll.php',function(response) {
 			var obj2 = JSON.parse(JSON.stringify(response));
 			var array = [];
@@ -87,8 +87,12 @@
 					array.push([obj2[i].Lat,obj2[i].Lng,obj2[i].Name]);
 				}
 			}
-			//add markers to map
-			for (var i=0; i<100; i++) {
+			createMarkers(array);
+		});
+		
+		/*creates map marker from an array */
+		function createMarkers(array) {
+			for (var i=0; i<array.length; i++) {
 				var lon = array[i][0];
 				var lat = array[i][1];
 				var popupText = array[i][2];
@@ -99,7 +103,7 @@
          
 				marker.bindPopup(popupText);
 			}
-		});
+		}
     </script>
 </body>
 </html>
